@@ -6,6 +6,12 @@
 body {
     margin: 0; /* Ingen kanter i siden af browser */
     background-color: 	#fbf7f5;
+    display: grid;
+    grid-template:
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+    'main main main main main main'
+    'footer footer footer  footer footer footer';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,21 +42,106 @@ img {
 }
 
 header{
-    height: 250px;
-
+    grid-area: header;
+    height: 80px;
+    border-bottom: 1px solid;
 }
 
+.menu{
+    grid-area: menu;
+    border-bottom: 1px solid;
+    background-color: darkslateblue;
+}
 
+.navbar {
+    overflow: hidden;
+    padding-left: 50px;
+    height: 55px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .produkter-btn {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .produkter-btn {
+    background-color: midnightblue;
+}
+
+.produkter-indhold {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.produkter-indhold a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.produkter-indhold a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .produkter-indhold {
+    display: block;
+}
+
+.main{
+    grid-area: main;
+
+}
 
 
 
 footer{
-    height: 250px;
-
+    grid-area: footer;
+    height: 100px;
+    background-color: #b2b2b2;
+    border-top: 1px solid;
 }
 
 @media only screen and (min-width: 600px) {
 
+    body{
+        grid-template:
+        'header header header header header header header header'
+        'menu menu menu menu menu menu menu menu'
+        'main main main main main main main main'
+        'footer footer footer footer footer  footer footer footer';
 
+    }
+
+    .menu{
+
+
+    }
 
 }
