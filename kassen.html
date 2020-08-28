@@ -59,6 +59,44 @@
 
 <div class="main">
 
+    <h1>Kasse</h1>
+    <form id="kasse-form">
+        <div class="kasse-form">
+            <div class="form-tekst form-gruppe field-navn">
+                <label for="navn" class="form-tekst-label">Fulde navn<span class="form-required">*</span></label>
+                <input type="text" placeholder="For- og efternavn" class="form-kontrol" name="navn" id="navn" required="required" aria-required="true">
+            </div>
+            <div class="form-tekst form-gruppe field-adresse">
+                <label for="adresse" class="form-tekst-label">Leveringsadresse<span class="form-required">*</span></label>
+                <input type="text" class="form-kontrol" name="adresse"  id="adresse" required="required" aria-required="true">
+            </div>
+            <div class="form-tekst form-gruppe field-adresse-valgfri">
+                <label for="adresse-valgfri" class="form-tekst-label">Leveringsadresse 2 (Valgfrit)</label>
+                <input type="text" class="form-kontrol" name="adresse-valgfri" id="adresse-valgfri">
+            </div>
+            <div class="form-tekst form-gruppe field-by">
+                <label for="by" class="form-tekst-label">By<span class="form-required">*</span></label>
+                <input type="text" class="form-kontrol" name="by" id="by" required="required" aria-required="true">
+            </div>
+            <div class="form-tekst form-gruppe field-postnummer">
+                <label for="postnummer" class="form-tekst-label">Postnummer<span class="form-required">*</span></label>
+                <input type="text" class="form-kontrol" name="postnummer" id="postnummer" required="required" aria-required="true">
+            </div>
+            <div class="form-nummer form-gruppe field-telefon">
+                <label for="telefon" class="form-nummer-label">Nummer</label>
+                <input type="number" placeholder="telefonnummer" class="form-control" name="telefon" id="telefon">
+            </div>
+            <div class="form-tekst form-gruppe field-email">
+                <label for="email" class="form-tekst-label">E-mail<span class="form-required">*</span></label>
+                <input type="email" placeholder="Indtast E-mail" class="form-kontrol" name="email" id="email" required="required" aria-required="true">
+            </div>
+            <div class="form-tekst form-gruppe field-email-godkend">
+                <label for="email-godkend" class="form-tekst-label">Godkend E-mail<span class="form-required">*</span></label>
+                <input type="text" placeholder="Indtast E-mail igen" class="form-kontrol" name="email-godkend" id="email-godkend" required="required" aria-required="true">
+            </div>
+        </div>
+    </form>
+
 
 </div>
 
