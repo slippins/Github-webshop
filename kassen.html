@@ -21,7 +21,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/kassen.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/5b4743b31a.js" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -96,7 +96,7 @@
                 <label for="email-godkend" class="form-tekst-label">Godkend E-mail<span class="form-required">*</span></label>
                 <input type="text" placeholder="Indtast E-mail igen" class="form-kontrol" name="email-godkend" id="email-godkend" required="required" aria-required="true">
             </div>
-            <button class="godkend-btn">Godkend</button>
+            <button class="godkend-btn" id="godkend">Godkend</button>
         </div>
 
     </form>
@@ -111,6 +111,16 @@
     <i class="fab fa-cc-visa"></i>
     <i class="fab fa-cc-paypal"></i>
 </footer>
+
+<script>
+    $(document).ready(function() {
+        $("godkend").click(function () {
+            alert("Købet er nu godkendt.");
+        });
+    });
+
+
+</script>
 
 </body>
 </html>
