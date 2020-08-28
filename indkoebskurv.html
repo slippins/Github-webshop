@@ -21,6 +21,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/indkoebskurv.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/5b4743b31a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +62,7 @@
 
 <div class="main">
 
-
+    <div id="js-heightControl" style="height: 0;">&nbsp;</div>
 </div>
 
 
@@ -71,6 +72,10 @@
     <i class="fab fa-cc-visa"></i>
     <i class="fab fa-cc-paypal"></i>
 </footer>
-
+<script>
+    $(function(){
+        $('#js-heightControl').css('height', $(window).height() - $('html').height() +'px');
+    });
+</script>
 </body>
 </html>
