@@ -50,7 +50,7 @@ header{
 .menu{
     grid-area: menu;
     border-bottom: 1px solid;
-    background-color: #6633cc;
+    background-color: #262626;
 }
 
 .navbar {
@@ -95,6 +95,7 @@ header{
     min-width: 200px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 2px;
 }
 
 .produkter-indhold a {

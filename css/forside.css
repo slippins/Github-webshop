@@ -9,7 +9,7 @@
         flex-direction: column;
         padding: 20px;
         justify-content: space-evenly;
-        background-color: #4ccc33;
+        background-color: #cccccc;
         border-radius: 5px;
         margin: 10px;
     }
@@ -23,6 +23,15 @@
 
     }
 
+    .tilbud-btn{
+        background-color: yellow;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+    }
 
 
     .fri-fragt{
@@ -32,7 +41,7 @@
         flex-direction: column;
         padding: 20px;
         justify-content: space-evenly;
-        background-color: #4ccc33;
+        background-color: #cccccc;
         border-radius: 5px;
         margin: 10px;
     }
