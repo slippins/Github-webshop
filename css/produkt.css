@@ -1,0 +1,60 @@
+.tekst-box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+hr{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.koebselementer p{
+    color: green;
+
+}
+
+.koebselementer strong{
+    font-size: 2rem;
+
+}
+
+.koeb-btn{
+    background-color: darkgreen;
+    color: white;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.koeb-btn a{
+    color: white;
+    text-decoration: none;
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #produkt-img{
+        max-width: 600px;
+        height: auto;
+
+    }
+
+    .tekst-box p {
+        max-width: 50%;
+
+    }
+
+
+    .koebselementer{
+        align-self: flex-end;
+    }
+
+
+
+}
