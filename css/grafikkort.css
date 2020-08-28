@@ -8,6 +8,12 @@
     padding: 20px;
 }
 
+.grafikkort a{
+    color: white;
+    text-decoration: none;
+
+}
+
 .produkt-info-tekst{
     padding: 15px;
 
