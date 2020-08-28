@@ -55,8 +55,17 @@ header{
 
 .navbar {
     overflow: hidden;
-    padding-left: 50px;
     height: 55px;
+}
+
+.navbar-left{
+    padding-left: 50px;
+
+}
+
+.navbar-right{
+    padding-right: 50px;
+
 }
 
 .navbar a {
@@ -152,7 +161,8 @@ footer .fas, .fab{
     }
 
     .menu{
-
+        display: flex;
+        justify-content: space-between;
 
     }
 
