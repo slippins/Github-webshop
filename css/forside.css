@@ -1,0 +1,48 @@
+
+
+@media only screen and (min-width: 600px) {
+
+    .tilbud{
+        height: 350px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-evenly;
+        background-color: #4ccc33;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .fri-fragt .fa-truck{
+        font-size: 6rem;
+    }
+
+    .tilbud strong{
+        font-size: 1.3rem;
+
+    }
+
+
+
+    .fri-fragt{
+        height: 350px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-evenly;
+        background-color: #4ccc33;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .fri-fragt .fa-truck{
+        font-size: 6rem;
+    }
+
+    .fri-fragt strong{
+        font-size: 1.3rem;
+
+    }
+}
