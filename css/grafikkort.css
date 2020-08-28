@@ -5,17 +5,31 @@
 .grafikkort{
     width: 80%;
     background-color: #cccccc;
-
+    padding: 10px;
 }
 
 @media only screen and (min-width: 600px) {
+   .main{
+       flex-flow: wrap;
+        justify-content: center;
+   }
+
+
     .grafikkort{
         width: 500px;
         height: 400px;
+        margin: 5px;
 
     }
 
+.img-produkt{
+    width: 250px;
+    max-height: 150px;
+    object-fit: cover;
+    overflow: hidden;
 
+
+}
 
 
 }
